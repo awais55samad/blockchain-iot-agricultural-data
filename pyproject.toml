@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agri-chain"
+version = "0.1.0"
+description = "Transparent and tamper-resistant agricultural data with a blockchain-style hash chain and IoT sensor records"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[project.scripts]
+agri-chain = "agri_chain.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
